@@ -112,7 +112,8 @@ function change() {
 }
 
 $('*[data-target="modal"]').click(function () {
-  $('section.help-modal').addClass('active');
+  var toOpen = $(this).attr('data-name');
+  $('section.help-modal.' + toOpen).addClass('active');
 });
 $('.modal__close').click(function () {
   $('section.help-modal').removeClass('active');
@@ -127,7 +128,7 @@ $('.modal__close').click(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/Shared/Previously Relocated Items/Security/Programownie/App IG/resources/js/aplication.js */"./resources/js/aplication.js");
+module.exports = __webpack_require__(/*! /home/tom/Projekty/IG-APP/resources/js/aplication.js */"./resources/js/aplication.js");
 
 
 /***/ })

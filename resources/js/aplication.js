@@ -12,7 +12,9 @@ function change() {
 }
 
 $('*[data-target="modal"]').click(function(){
-    $('section.help-modal').addClass('active');
+    let toOpen = $(this).attr('data-name');
+    $('section.help-modal.' + toOpen).addClass('active');
+    
 });
 
 

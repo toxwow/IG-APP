@@ -29,7 +29,7 @@ class HomeController extends Controller
             return view('admin', ['user' => $user]);
         }
         else if($user -> is_admin === 0){
-            return view('user.stage_1', ['user' => $user]);
+            return view('user.stage', ['user' => $user]);
         }
 
     }

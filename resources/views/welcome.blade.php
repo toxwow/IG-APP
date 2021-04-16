@@ -60,10 +60,10 @@
                 </form>
             </div>
             <div class="login__help">
-                <p data-target="modal">👉 Co to jest? <span>Przeczytaj instrukcję</span></p>
+                <p data-target="modal" data-name="intro">👉 Co to jest? <span>Przeczytaj instrukcję</span></p>
             </div>
         </div>
-        <section class="help-modal">
+        <section class="help-modal intro">
             <div class="modal__close">zamknij instrukcję</div>
             <div class="modal__img"><img src="{{asset('img/modal_img.svg')}}" alt=""></div>
             <div class="modal__content">
